@@ -1,0 +1,11 @@
+$('#feedback_submit_button').hide();
+$('#feedback_thank_you_message').fadeIn('500')
+setTimeout(function() {
+  $('#feedback_thank_you_message').fadeOut('500');
+  $('#modalFeedbackForm').modal("hide");
+  setTimeout(function(){
+    $('#feedback_submit_button').show(); 
+    $('#remark_content').val("");
+  },
+  1000);
+}, 2000);

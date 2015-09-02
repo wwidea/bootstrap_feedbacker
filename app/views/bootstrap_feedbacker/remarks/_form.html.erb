@@ -1,0 +1,12 @@
+<%= form_for @remark, url: "/bootstrap_feedbacker/remarks", remote: true do |f| %>
+  <div class="modal-body">
+    <%= f.text_area :content, class: 'form-control'%>
+  </div>
+  <div class="modal-footer">
+    <div id='feedback_submit_button'>
+      <%= f.submit 'Submit Feedback', class: 'btn btn-success' %>
+      <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+    </div>
+    <div id='feedback_thank_you_message' style='display:none'>Thank you for your feedback!</div>
+  </div>
+<% end %>
