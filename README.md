@@ -21,7 +21,8 @@ Installation
 
 Add the following to your Gemfile.
 
-gem 'bootstrap-feedbacker'
+```gem 'bootstrap-feedbacker'```
+
 Run bundle install
 
 Add the following line at at appropriate position in your application layout.
