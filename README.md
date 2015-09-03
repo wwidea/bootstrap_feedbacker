@@ -1,5 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/boostrap_feedbacker.png)](http://badge.fury.io/rb/bootstrap_feedbacker)
-[![Code Climate](https://codeclimate.com/github/wwidea/bootstrap-feedbacker.png)](https://codeclimate.com/github/wwidea/bootstrap-feedbacker)
+[![Code Climate](https://codeclimate.com/github/wwidea/bootstrap_feedbacker.png)](https://codeclimate.com/github/wwidea/bootstrap_feedbacker)
 
 
 ### BoostrapFeedbacker
