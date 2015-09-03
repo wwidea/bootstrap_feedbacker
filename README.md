@@ -2,12 +2,12 @@
 [![Code Climate](https://codeclimate.com/github/wwidea/bootstrap-feedbacker.png)](https://codeclimate.com/github/wwidea/bootstrap-feedbacker)
 
 
-### Feedbacker
-Feedbacker provides a tab for users to contact developers from within the application
+### BoostrapFeedbacker
+BoostrapFeedbacker provides a tab for users to contact developers from within the application
 
 ### Assumptions
 
-Feedbacker assumes that you're using...
+BoostrapFeedbacker assumes that you're using...
 
 * At least Rails 4.2.2
 * The Rails Asset Pipeline
@@ -21,17 +21,17 @@ Installation
 
 Add the following to your Gemfile.
 
-```gem 'bootstrap-feedbacker'```
+```gem 'bootstrap_feedbacker'```
 
 Run bundle install
 
 Add the following line at at appropriate position in your application layout.
 
-```<%= render partial: 'feedbacker/button_with_modal' unless current_user.is_guest? %>```
+```<%= render partial: 'bootstrap_feedbacker/remarks/button_with_modal' unless current_user.is_guest? %>```
  
 OR: If you only want the modal, and want to use your own button, use:
 
-```<%= render partial: 'feedbacker/modal' unless current_user.is_guest? %>```
+```<%= render partial: 'bootstrap_feedbacker/remarks/modal' unless current_user.is_guest? %>```
 
 Then do something like this:
  
@@ -42,11 +42,11 @@ Run ```rake bootstrap_feedbacker:install:migrations``` to add migration to your 
 
 Create feedbacker.rb in config/initializers and add the following line.
 
-```Feedbacker::SETTINGS.email_to = 'support@yourdomain.com'```
+```BootstrapFeedbacker::SETTINGS.email_to = 'support@yourdomain.com'```
 
 OR
 ```
-  Feedbacker::SETTINGS.update do |settings|
+  BootstrapFeedbacker::SETTINGS.update do |settings|
     settings.email_to = 'support@yourdomain.com'
     settings.user_name_method = :name             # default value
     settings.email_prefix = '[FEEDBACKER]'        # default value
