@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = BootstrapFeedbacker::VERSION
   s.authors     = ["David Gross"]
   s.email       = ["david.gross@daggerweb.org"]
-  s.homepage    = "https://github.com/wwidea/bootstrap-feedbacker"
+  s.homepage    = "https://github.com/wwidea/bootstrap_feedbacker"
   s.summary     = %q{Sitewide Feedback form pinned to sidewall as verticle tab.}
   s.description = %q{Feedbacker provides a modal window with a button on side of every page on a site for users to send feedback to the site.}
   s.license     = "MIT"
