@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170306210545) do
+ActiveRecord::Schema.define(version: 2017_03_06_210545) do
 
   create_table "bootstrap_feedbacker_remarks", force: :cascade do |t|
-    t.integer  "user_id"
-    t.text     "source_url"
-    t.text     "content"
+    t.integer "user_id"
+    t.text "source_url"
+    t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
+    t.string "name"
+    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

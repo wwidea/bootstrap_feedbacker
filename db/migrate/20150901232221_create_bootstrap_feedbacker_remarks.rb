@@ -1,4 +1,4 @@
-class CreateBootstrapFeedbackerRemarks < ActiveRecord::Migration
+class CreateBootstrapFeedbackerRemarks < ActiveRecord::Migration[4.2]
   def change
     create_table :bootstrap_feedbacker_remarks do |t|
       t.integer :user_id
