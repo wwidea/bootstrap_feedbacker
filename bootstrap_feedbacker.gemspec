@@ -23,6 +23,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'bootstrap',       '>= 4.1.1'
 
   s.add_development_dependency 'pry',     '~> 0'
-  s.add_development_dependency 'sqlite3', '>= 1.3.10'
+  s.add_development_dependency 'sqlite3', '~> 1.3.10'
   s.add_development_dependency 'mini_racer', '>=0.2.0'
 end
