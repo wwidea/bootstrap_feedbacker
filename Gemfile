@@ -7,4 +7,5 @@ gemspec
 
 group :test do
   gem 'simplecov'
+  gem 'sqlite3'
 end
