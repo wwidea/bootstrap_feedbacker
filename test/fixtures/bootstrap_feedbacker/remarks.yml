@@ -1,5 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 remark:
-  user_id: tiffany
-  source_url: http://wwidea.org
-  content: Test Comment
+  user:       tiffany
+  source_url: https://www.brightwayslearning.org/
+  content:    Test Comment
