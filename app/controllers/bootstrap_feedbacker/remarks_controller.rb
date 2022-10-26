@@ -2,8 +2,6 @@ require_dependency "bootstrap_feedbacker/application_controller"
 
 module BootstrapFeedbacker
   class RemarksController < ApplicationController
-
-    # POST /remarks
     def create
       @remark = Remark.new(remark_params.merge(user_id: current_user.id))
       @remark.source_url = request.env['HTTP_REFERER'] || "no referrer"
@@ -17,7 +15,6 @@ module BootstrapFeedbacker
 
     private
 
-    # Only allow a trusted parameter "white list" through.
     def remark_params
       params.require(:remark).permit(:content)
     end
