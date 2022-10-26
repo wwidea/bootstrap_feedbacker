@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BootstrapFeedbacker
   class FeedbackMailer < ActionMailer::Base
     def feedback(remark)

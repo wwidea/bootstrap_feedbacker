@@ -1,4 +1,4 @@
-require_dependency "bootstrap_feedbacker/application_controller"
+# frozen_string_literal: true
 
 module BootstrapFeedbacker
   class RemarksController < ApplicationController
