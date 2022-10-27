@@ -8,7 +8,7 @@ gemspec
 group :test do
   gem 'bootstrap'
   gem 'guard'
-  gem 'guard-minitest'
+  gem 'guard-shell'
   gem 'simplecov'
   gem 'sqlite3'
 end
