@@ -4,16 +4,18 @@ require 'test_helper'
 
 module BootstrapFeedbacker
   class RemarksControllerTest < ActionDispatch::IntegrationTest
-    setup do
-      @remark = bootstrap_feedbacker_remarks(:remark)
-      @routes = Engine.routes
+    include Engine.routes.url_helpers
+
+    test "should get new" do
+      get new_remark_path(format: :turbo_stream)
+      assert_response :success
     end
 
     test "should create remark" do
       assert_difference('Remark.count') do
-        post @routes.url_helpers.remarks_path, params: { remark: { content: @remark.content }, format: :js }
+        post remarks_path, params: { remark: { content: 'testing' }, format: :turbo_stream }
       end
-      assert_response 200
+      assert_response :success
     end
   end
 end
