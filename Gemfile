@@ -11,4 +11,5 @@ group :test do
   gem 'guard-shell'
   gem 'simplecov'
   gem 'sqlite3'
+  gem 'turbo-rails'
 end
