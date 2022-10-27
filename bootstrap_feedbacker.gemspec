@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Aaron Baldwin', 'Brightways Learning']
   s.email       = ["baldwina@brightwayslearning.org"]
   s.homepage    = "https://github.com/wwidea/bootstrap_feedbacker"
-  s.summary     = %q{Sitewide Feedback form pinned to sidewall as verticle tab.}
-  s.description = %q{Feedbacker provides a modal window with a button on side of every page on a site for users to send feedback to the site.}
+  s.summary     = %q{User feedback form in a Bootstrap modal.}
+  s.description = %q{Bootstrap Feedbacker opens a modal window for users to send application feedback over email that includes the referring url.}
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
