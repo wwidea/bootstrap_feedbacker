@@ -3,7 +3,7 @@
 module BootstrapFeedbacker
   class RemarksController < ApplicationController
     def new
-      render
+      @remark = BootstrapFeedbacker::Remark.new
     end
 
     def create
