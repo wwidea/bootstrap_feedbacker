@@ -1,0 +1,5 @@
+<%= turbo_stream.update(BootstrapFeedbacker::SETTINGS.modal_id) do %>
+  <div data-controller="remarks">
+    <%= render('bootstrap_feedbacker/remarks/modal') %>
+  </div>
+<% end %>
