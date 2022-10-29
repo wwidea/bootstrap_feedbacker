@@ -75,7 +75,6 @@ Rails.application.configure do
 
   # disable writing log files
   unless ENV['RAILS_ENABLE_LOGGER']
-    config.logger     = ActiveSupport::Logger.new(nil)
-    config.log_level  = :fatal
+    config.logger = ActiveSupport::Logger.new(nil)
   end
 end
