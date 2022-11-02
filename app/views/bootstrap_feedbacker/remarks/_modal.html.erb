@@ -1,5 +1,5 @@
 <div data-controller="bootstrap-feedbacker--remarks">
-  <div class="modal fade" id="modalFeedbackForm" tabindex="-1" role="dialog" aria-labelledby="modalFeedbackLabel" data-bootstrap-feedbacker--remarks-target="modal">
+  <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalFeedbackLabel" data-bootstrap-feedbacker--remarks-target="modal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -8,7 +8,9 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <%= render partial: 'bootstrap_feedbacker/remarks/form' %>
+        <div id="bootstrap_feedbacker_remark_modal_content">
+          <%= render('form') %>
+        </div>
       </div>
     </div>
   </div>
