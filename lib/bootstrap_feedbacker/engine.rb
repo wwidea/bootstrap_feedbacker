@@ -10,7 +10,7 @@ module BootstrapFeedbacker
 
     initializer "bootstrap_feedbacker.assets" do
       if Rails.application.config.respond_to?(:assets)
-        Rails.application.config.assets.precompile += %w( bootstrap_feedbacker.js remarks_controller.js )
+        Rails.application.config.assets.precompile += %w( controllers/bootstrap_feedbacker/remarks_controller.js )
       end
     end
 
