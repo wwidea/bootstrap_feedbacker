@@ -1,13 +1,13 @@
-[![Gem Version](https://badge.fury.io/rb/boostrap_feedbacker.png)](http://badge.fury.io/rb/bootstrap_feedbacker)
+[![Gem Version](https://badge.fury.io/rb/bootstrap_feedbacker.png)](http://badge.fury.io/rb/bootstrap_feedbacker)
 [![Code Climate](https://codeclimate.com/github/wwidea/bootstrap_feedbacker.png)](https://codeclimate.com/github/wwidea/bootstrap_feedbacker)
 
 
-### BoostrapFeedbacker
-BoostrapFeedbacker provides a tab for users to contact developers from within the application
+# BootstrapFeedbacker
+BootstrapFeedbacker provides a tab for users to contact developers from within the application
 
-### Assumptions
+## Assumptions
 
-BoostrapFeedbacker assumes that you're using...
+BootstrapFeedbacker assumes that you're using...
 
 * At least Rails 4.2.2
 * The Rails Asset Pipeline
@@ -28,13 +28,13 @@ Run bundle install
 Add the following line at at appropriate position in your application layout.
 
 ```<%= render partial: 'bootstrap_feedbacker/remarks/button_with_modal' unless current_user.is_guest? %>```
- 
+
 OR: If you only want the modal, and want to use your own button, use:
 
 ```<%= render partial: 'bootstrap_feedbacker/remarks/modal' unless current_user.is_guest? %>```
 
 Then do something like this:
- 
+
 ```link_to("Feedback", "#", data: { toggle: 'modal', target: '#modalFeedbackForm'})```
 
 
@@ -58,8 +58,6 @@ Mount the gem in your routes file:
 mount BootstrapFeedbacker::Engine => "/bootstrap_feedbacker"
 ```
 
-Contributions
+## License
 
-If have improvements to contribute to this gem, please feel free to fork, commit with tests (if applicable), and then send a pull request. Thank You!
-
-Copyright (c) 2009-2013 WWIDEA, Inc. released under the MIT license
+Bootstrap Feedbacker is released under the [MIT License](https://opensource.org/licenses/MIT).
