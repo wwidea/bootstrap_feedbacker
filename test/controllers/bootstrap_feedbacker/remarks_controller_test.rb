@@ -13,7 +13,9 @@ module BootstrapFeedbacker
 
     test "should create remark" do
       assert_difference('Remark.count') do
-        post remarks_path, params: { remark: { content: 'testing' }, format: :turbo_stream }
+        assert_emails 1 do
+          post remarks_path, params: { remark: { content: 'testing' }, format: :turbo_stream }
+        end
       end
       assert_response :success
     end
