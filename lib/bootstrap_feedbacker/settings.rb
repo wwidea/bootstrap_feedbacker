@@ -8,7 +8,7 @@ module BootstrapFeedbacker
       self.email_to           = ''
       self.email_prefix       = '[FEEDBACKER]'
       self.modal_id           = 'bootstrap_feedbacker_remark_modal'
-      self.user_class         = "User"
+      self.user_class         = 'User'
       self.user_name_method   = :name
     end
 
