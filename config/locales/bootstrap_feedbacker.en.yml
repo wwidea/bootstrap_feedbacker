@@ -1,4 +1,12 @@
 ---
 en:
   bootstrap_feedbacker:
-    greeting: What's on your mind?
+    remarks:
+      error:
+        message: An error occured saving your feedback. Please try again.
+      form:
+        greeting: What's on your mind?
+      new:
+        title: Feedback
+      thank_you:
+        message: Thank you for your feedback!

@@ -1,23 +1,19 @@
-$:.push File.expand_path("../lib", __FILE__)
+require_relative "lib/bootstrap_feedbacker/version"
 
-# Maintain your gem's version:
-require "bootstrap_feedbacker/version"
+Gem::Specification.new do |spec|
+  spec.name        = "bootstrap_feedbacker"
+  spec.version     = BootstrapFeedbacker::VERSION
+  spec.authors     = ["Aaron Baldwin", "Brightways Learning"]
+  spec.email       = ["baldwina@brightwayslearning.org"]
+  spec.homepage    = "https://github.com/wwidea/bootstrap_feedbacker"
+  spec.summary     = %q{User feedback form in a Bootstrap modal.}
+  spec.description = %q{Bootstrap Feedbacker opens a modal window for users to send application feedback over email that includes the referring url.}
+  spec.license     = "MIT"
 
-# Describe your gem and declare its dependencies:
-Gem::Specification.new do |s|
-  s.name        = "bootstrap_feedbacker"
-  s.version     = BootstrapFeedbacker::VERSION
-  s.authors     = ['Aaron Baldwin', 'Brightways Learning']
-  s.email       = ["baldwina@brightwayslearning.org"]
-  s.homepage    = "https://github.com/wwidea/bootstrap_feedbacker"
-  s.summary     = %q{User feedback form in a Bootstrap modal.}
-  s.description = %q{Bootstrap Feedbacker opens a modal window for users to send application feedback over email that includes the referring url.}
-  s.license     = "MIT"
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = spec.homepage
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency 'rails',         '>= 5.0'
-  s.add_dependency 'sassc-rails',   '>= 2.1'
-  s.add_dependency 'jquery-rails',  '>= 4.0.4'
-  s.add_dependency 'bootstrap',     '>= 4.1.1'
+  spec.add_dependency 'rails', '>= 6.0.0'
 end

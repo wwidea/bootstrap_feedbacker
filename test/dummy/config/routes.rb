@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  root 'dashboards#show'
 
-  root to: 'dashboard#index', as: ''
+  resource :dashboard, only: :show
 
   mount BootstrapFeedbacker::Engine => "/bootstrap_feedbacker"
 end
