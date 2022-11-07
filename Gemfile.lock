@@ -132,6 +132,8 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.16.3)
+    mocha (2.0.2)
+      ruby2_keywords (>= 0.0.5)
     nenv (0.3.0)
     net-imap (0.3.1)
       net-protocol
@@ -190,6 +192,7 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.6.0)
     rexml (3.2.5)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -247,6 +250,7 @@ DEPENDENCIES
   guard
   guard-shell
   importmap-rails
+  mocha
   puma
   selenium-webdriver
   sprockets-rails
