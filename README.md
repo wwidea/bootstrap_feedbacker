@@ -48,10 +48,11 @@ Or set your email address and override any of these default settings:
 ```ruby
   BootstrapFeedbacker::SETTINGS.update do |settings|
     settings.email_to           = 'support@yourdomain.com'
-    settings.email_prefix       = '[FEEDBACKER]'                      # default
-    settings.modal_id           = 'bootstrap_feedbacker_remark_modal' # default
-    settings.user_class         = 'User'                              # default
-    settings.user_name_method   = :name                               # default
+    settings.email_prefix       = '[FEEDBACKER]'                              # default
+    settings.modal_content_id   = 'bootstrap_feedbacker_remark_modal_content' # default
+    settings.modal_id           = 'bootstrap_feedbacker_remark_modal'         # default
+    settings.user_class         = 'User'                                      # default
+    settings.user_name_method   = :name                                       # default
   end
 ```
 
