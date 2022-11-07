@@ -8,9 +8,9 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div id="bootstrap_feedbacker_remark_modal_content">
+        <%= tag.div id: BootstrapFeedbacker::SETTINGS.modal_content_id do %>
           <%= render('form') %>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>
