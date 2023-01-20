@@ -37,7 +37,7 @@ class Guard::Shell
 
   def check_for_test_files(paths)
     paths.select do |path|
-      File.exists?(path) ? path : puts("Test file not found - #{path}")
+      File.exist?(path) ? path : puts("Test file not found - #{path}")
     end
   end
 
