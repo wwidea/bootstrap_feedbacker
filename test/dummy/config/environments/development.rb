@@ -69,9 +69,9 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
 
-  ######################################
-  # Brightways Learning Settings Below #
-  ######################################
+  ################################
+  # Brightways Learning Settings #
+  ################################
 
   # disable writing log files
   unless ENV['RAILS_ENABLE_LOGGER']
