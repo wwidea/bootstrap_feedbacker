@@ -8,6 +8,7 @@ module BootstrapFeedbacker
 
     test "should get new" do
       get new_remark_path(format: :turbo_stream)
+
       assert_response :success
     end
 
