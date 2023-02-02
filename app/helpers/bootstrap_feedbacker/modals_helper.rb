@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BootstrapFeedbacker
   module ModalsHelper
     def bootstrap_feedbacker_link(name: 'Feedback', **html_options)

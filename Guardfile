@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 guard :shell do
-  directories %w(app lib test)
+  directories %w[app lib test]
 
   # app directory
   watch(%r{^app/(.+)\.rb$}) { |m| "test/#{m[1]}_test.rb" }
 
   # application_controller: all controllers
-  watch(%r{^app/controllers/application_controller\.rb$}) { 'test/controllers' }
+  watch(%r{^app/controllers/application_controller\.rb$}) { "test/controllers" }
 
   # views: controller test
   watch(%r{^app/views/(.+)/}) { |m| "test/controllers/#{m[1]}_controller_test.rb" }
@@ -20,7 +22,7 @@ guard :shell do
   watch(%r{^test/.+_test\.rb$})
 
   # test_helper
-  watch(%r{^test/test_helper\.rb$}) { 'test' }
+  watch(%r{^test/test_helper\.rb$}) { "test" }
 end
 
 class Guard::Shell
