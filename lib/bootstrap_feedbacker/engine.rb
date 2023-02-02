@@ -9,15 +9,11 @@ module BootstrapFeedbacker
     end
 
     initializer "bootstrap_feedbacker.assets" do
-      if Rails.application.config.respond_to?(:assets)
-        Rails.application.config.assets.precompile += %w[controllers/bootstrap_feedbacker/remarks_controller.js]
-      end
+      Rails.application.config.assets.precompile += %w[controllers/bootstrap_feedbacker/remarks_controller.js] if Rails.application.config.respond_to?(:assets)
     end
 
     initializer "bootstrap_feedbacker.importmap", before: "importmap" do |app|
-      if Rails.application.respond_to?(:importmap)
-        app.config.importmap.paths << Engine.root.join("config/importmap.rb")
-      end
+      app.config.importmap.paths << Engine.root.join("config/importmap.rb") if Rails.application.respond_to?(:importmap)
     end
   end
 end
