@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'test_helper'
+require "test_helper"
 
 module BootstrapFeedbacker
   class RemarksControllerTest < ActionDispatch::IntegrationTest
@@ -12,9 +12,9 @@ module BootstrapFeedbacker
     end
 
     test "should create remark" do
-      assert_difference('Remark.count') do
+      assert_difference("Remark.count") do
         assert_emails 1 do
-          post remarks_path, params: { remark: { content: 'testing' }, format: :turbo_stream }
+          post remarks_path, params: { remark: { content: "testing" }, format: :turbo_stream }
         end
       end
       assert_response :success
@@ -22,9 +22,9 @@ module BootstrapFeedbacker
 
     test "should fail to create remark" do
       Remark.any_instance.expects(:valid?).returns(false)
-      assert_no_difference('Remark.count') do
+      assert_no_difference("Remark.count") do
         assert_no_emails do
-          post remarks_path, params: { remark: { content: 'testing' }, format: :turbo_stream }
+          post remarks_path, params: { remark: { content: "testing" }, format: :turbo_stream }
         end
       end
       assert_response :unprocessable_entity
