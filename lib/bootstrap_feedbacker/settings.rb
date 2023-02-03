@@ -5,11 +5,11 @@ module BootstrapFeedbacker
     attr_accessor :email_to, :email_prefix, :modal_content_id, :modal_id, :user_name_method, :user_class
 
     def initialize
-      self.email_to           = ''
-      self.email_prefix       = '[FEEDBACKER]'
-      self.modal_content_id   = 'bootstrap_feedbacker_remark_modal_content'
-      self.modal_id           = 'bootstrap_feedbacker_remark_modal'
-      self.user_class         = 'User'
+      self.email_to           = ""
+      self.email_prefix       = "[FEEDBACKER]"
+      self.modal_content_id   = "bootstrap_feedbacker_remark_modal_content"
+      self.modal_id           = "bootstrap_feedbacker_remark_modal"
+      self.user_class         = "User"
       self.user_name_method   = :name
     end
 

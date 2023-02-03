@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative "lib/bootstrap_feedbacker/version"
 
 Gem::Specification.new do |spec|
@@ -6,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Aaron Baldwin", "Brightways Learning"]
   spec.email       = ["baldwina@brightwayslearning.org"]
   spec.homepage    = "https://github.com/wwidea/bootstrap_feedbacker"
-  spec.summary     = %q{User feedback form in a Bootstrap modal.}
-  spec.description = %q{Bootstrap Feedbacker opens a modal window for users to send application feedback over email that includes the referring url.}
+  spec.summary     = "User feedback form in a Bootstrap modal."
+  spec.description = "Bootstrap Feedbacker opens a modal window for users to send application feedback over email that includes the referring url."
   spec.license     = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage
