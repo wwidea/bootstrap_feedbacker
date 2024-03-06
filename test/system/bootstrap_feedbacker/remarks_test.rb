@@ -25,6 +25,6 @@ class RemarksTest < ApplicationSystemTestCase
 
   def open_feedback_form
     visit dashboard_path
-    click_link "Feedback"
+    click_on "Feedback"
   end
 end
