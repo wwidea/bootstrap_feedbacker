@@ -27,7 +27,7 @@ module BootstrapFeedbacker
     end
 
     def render_update(dom_id, partial:, status: :ok)
-      render(turbo_stream: turbo_stream.update(dom_id, partial: partial), status: status)
+      render(turbo_stream: turbo_stream.update(dom_id, partial:), status:)
     end
   end
 end
