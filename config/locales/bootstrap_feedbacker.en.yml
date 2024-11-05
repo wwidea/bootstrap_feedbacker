@@ -3,7 +3,7 @@ en:
   bootstrap_feedbacker:
     remarks:
       error:
-        message: An error occured saving your feedback. Please try again.
+        message: An error occurred saving your feedback. Please try again.
       form:
         greeting: What's on your mind?
       new:
