@@ -1,11 +1,13 @@
 # https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
 
-require:
-  - rubocop-capybara
+plugins:
   - rubocop-minitest
-  - rubocop-packaging
   - rubocop-performance
   - rubocop-rails
+
+require:
+  - rubocop-capybara
+  - rubocop-packaging
 
 AllCops:
   NewCops: enable
@@ -29,6 +31,12 @@ Layout/LineLength:
 Packaging/BundlerSetupInTests:
   Exclude:
     - test/dummy/config/boot.rb
+
+
+# Rails
+# The expect method requires Rails 8
+Rails/StrongParametersExpect:
+  Enabled: false
 
 
 # Style
