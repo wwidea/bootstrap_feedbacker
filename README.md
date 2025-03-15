@@ -1,6 +1,3 @@
-[![Gem Version](https://badge.fury.io/rb/bootstrap_feedbacker.png)](http://badge.fury.io/rb/bootstrap_feedbacker)
-[![Code Climate](https://codeclimate.com/github/wwidea/bootstrap_feedbacker.png)](https://codeclimate.com/github/wwidea/bootstrap_feedbacker)
-
 # BootstrapFeedbacker
 BootstrapFeedbacker provides a modal form to collect user feedback and sends it in an email including the current page URL to the configured email address.
 
