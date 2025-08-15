@@ -13,7 +13,7 @@ module BootstrapFeedbacker
         FeedbackMailer.feedback(@remark).deliver_now
         render_update(SETTINGS.modal_content_id, partial: "thank_you")
       else
-        render_update(SETTINGS.modal_content_id, partial: "error", status: :unprocessable_entity)
+        render_update(SETTINGS.modal_content_id, partial: "error", status: :unprocessable_content)
       end
     end
 

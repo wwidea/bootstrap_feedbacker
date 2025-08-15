@@ -28,7 +28,7 @@ module BootstrapFeedbacker
           post remarks_path, params: { remark: { content: "testing" }, format: :turbo_stream }
         end
       end
-      assert_response :unprocessable_entity
+      assert_response :unprocessable_content
     end
   end
 end
