@@ -12,7 +12,6 @@ AllCops:
   TargetRubyVersion: 3.3
   SuggestExtensions: false
   Exclude:
-  Exclude:
     - bin/*
     - Guardfile
     - db/migrate/*
