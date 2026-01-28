@@ -33,6 +33,9 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Build CSS
+        run: bin/rails app:dartsass:build
+
       - name: Run tests
         env:
           RAILS_ENV: test
