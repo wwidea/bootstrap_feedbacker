@@ -6,7 +6,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gemspec
 
-gem "bootstrap", "~> 4.4"
+gem "bootstrap", "~> 5.3"
 gem "dartsass-rails"
 gem "guard"
 gem "guard-shell"
