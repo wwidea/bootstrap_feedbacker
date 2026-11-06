@@ -7,7 +7,6 @@ pin "application"
 
 # Bootstrap
 pin "bootstrap", to: "bootstrap.min.js"
-pin "@popperjs/core", to: "popper.js"
 
 # Hotwire
 pin "@hotwired/turbo-rails", to: "turbo.min.js"
