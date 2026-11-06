@@ -23,7 +23,7 @@ gem "stimulus-rails"
 gem "turbo-rails"
 
 group :test do
-  gem "capybara"
-  gem "mocha"
+  gem "capybara", require: false
+  gem "mocha", require: false
   gem "selenium-webdriver"
 end
