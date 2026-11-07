@@ -2,6 +2,6 @@
 
 module BootstrapFeedbacker
   class ApplicationMailer < ActionMailer::Base
-    layout "mailer"
+    layout "bootstrap_feedbacker/mailer"
   end
 end

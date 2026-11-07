@@ -5,6 +5,6 @@ export default class extends Controller {
   static targets  = [ "modal" ]
 
   modalTargetConnected(element) {
-    $(element).modal('show')
+    window.bootstrap.Modal.getOrCreateInstance(element).show()
   }
 }
